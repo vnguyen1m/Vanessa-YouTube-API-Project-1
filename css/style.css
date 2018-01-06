@@ -1,0 +1,15 @@
+
+
+.jumbotron {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: deepskyblue;
+}
+}
+
+.alert {
+    padding: 2px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}

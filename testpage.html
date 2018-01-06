@@ -1,11 +1,20 @@
+<!DOCTYPE html>
+<html>
 
-// Map of Barcelona, Madrid, Arzak
+<body>
+
+<div id="map" style="width:400px;height:400px"></div>
+<br>
+<div id="sagrada" style="width:400px;height:400px"></div>
+
+<script>
+
 function myMap() {
   var barcelona = new google.maps.LatLng(41.4036339,2.1721671);
   var madrid = new google.maps.LatLng(40.4316233,-3.7214167);
   var arzak = new google.maps.LatLng(43.3214541,-1.9515508);
 
-  var mapCanvas = document.getElementById("madrid");
+  var mapCanvas = document.getElementById("map");
   var mapOptions = {center:   madrid, zoom: 4};
   var map = new google.maps.Map(mapCanvas,mapOptions);
 
@@ -32,3 +41,14 @@ function myMap() {
   infowindow.open(map,marker);
   }
 
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMy21fssODYGvF_Dp5RlDejJrF9CGvcJQ&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
